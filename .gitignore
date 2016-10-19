@@ -1,0 +1,5 @@
+reports/*
+.DS_Store
+screenshots/
+features_report.html
+features_report.json
