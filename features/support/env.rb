@@ -24,7 +24,7 @@ Capybara.register_driver :selenium do |app|
     )
   )
   elsif BROWSER.eql?('firefox')
-    Capybara::Selenium::Driver.new(app, :browser => :firefox)
+    Capybara::Selenium::Driver.new(app, :browser => :firefox, :marionette => true)
   elsif BROWSER.eql?('internet_explorer')
     Capybara::Selenium::Driver.new(app, :browser => :internet_explorer)
   elsif BROWSER.eql?('safari')
